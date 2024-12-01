@@ -3,92 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="font-sans bg-gray-100">
+<body class="bg-white-100 dark:bg-gray-900 text-white">
+    <header id="navbar" class="bg-transparent py-4 fixed top-0 left-0 w-full z-50 transition duration-300">
+        <nav class="container mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <h1 class="text-2xl font-bold tracking-wide" style="color: #74b9ff;">
+                Muh.Zulhaji
+            </h1>
+            <!-- Navigation Links -->
+            <div class="hidden md:flex space-x-8 text-lg">
+                <a href="#home" class="text-gray-700 hover:text-blue-600 hover:border-b-2 border-indigo-500 transition hover:duration-300">Home</a>
+                <a href="#projects" class="text-gray-700 hover:text-blue-600 transition">Projects</a>
+                <a href="#services" class="text-gray-700 hover:text-blue-600 transition">Services</a>
+                <a href="#contact" class="text-gray-700 hover:text-blue-600 transition">Contact</a>
+            </div>
 
-    <!-- Navbar -->
-    <nav class="bg-blue-600 py-4">
-        <div class="container mx-auto flex justify-between items-center px-6">
-            <a href="#" class="text-white text-2xl font-bold">Zul</a>
-            <ul class="flex space-x-6 text-white">
-                <li><a href="#about" class="hover:underline">Tentang Saya</a></li>
-                <li><a href="#projects" class="hover:underline">Proyek</a></li>
-                <li><a href="#contact" class="hover:underline">Kontak</a></li>
-            </ul>
+            <div class="text-black">
+                <a href="https://github.com/Zyprush18" class="text-black">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="h-6 w-6 fill-current"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                </a>
+            </div>
+            <!-- Mobile Menu Icon -->
+            <div class="md:hidden flex items-center">
+                <button id="menu-toggle" class="text-gray-700 focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden flex flex-col mt-4 space-y-4 text-center text-lg">
+            <a href="#home" class="text-gray-700 hover:text-blue-600 transition">Home</a>
+            <a href="#projects" class="text-gray-700 hover:text-blue-600 transition">Projects</a>
+            <a href="#services" class="text-gray-700 hover:text-blue-600 transition">Services</a>
+            <a href="#contact" class="text-gray-700 hover:text-blue-600 transition">Contact</a>
         </div>
-    </nav>
+    </header>
 
-    <!-- Hero Section -->
-    <section class="bg-blue-500 text-white h-screen flex flex-col justify-center items-center text-center px-6">
-        <h1 class="text-4xl md:text-5xl font-semibold">Halo, Saya Zul</h1>
-        <p class="mt-4 text-xl">Saya seorang Web Developer yang berfokus pada pengembangan aplikasi web dan proyek digital.</p>
-        <a href="#projects" class="mt-6 inline-block px-6 py-3 bg-white text-blue-500 rounded-full text-lg font-semibold hover:bg-gray-100">Lihat Proyek Saya</a>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="py-20 bg-white text-center px-6">
-        <div class="container mx-auto max-w-4xl">
-            <h2 class="text-3xl font-semibold">Tentang Saya</h2>
-            <p class="mt-4 text-xl text-gray-600">Saya adalah seorang pengembang web yang berdedikasi dan selalu berusaha untuk belajar dan mengembangkan keterampilan saya. Saya berfokus pada pengembangan frontend dan backend, serta selalu berusaha memberikan solusi terbaik untuk setiap proyek.</p>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="py-20 bg-gray-50 text-center px-6">
-        <div class="container mx-auto max-w-6xl">
-            <h2 class="text-3xl font-semibold">Proyek Terbaru</h2>
-            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-12">
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img src="https://via.placeholder.com/400" alt="Proyek 1" class="w-full h-56 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold">Proyek 1</h3>
-                        <p class="mt-4 text-gray-600">Deskripsi singkat proyek 1 ini. Menyediakan solusi bagi kebutuhan pengguna dan responsif di berbagai perangkat.</p>
-                        <a href="#" class="mt-4 inline-block text-blue-600">Lihat Detail</a>
+    <section id="home" class="text-black h-screen">
+        <div class="container mx-auto h-full">
+            <div class="grid grid-cols-1 md:grid-cols-6 gap-4 h-full">
+                <!-- Kolom 1: Konten Utama -->
+                <div class="col-span-6 md:col-span-3 flex justify-center items-center py-48 px-4">
+                    <div class="w-full md:w-2/3 ">
+                        <span class="block text-blue-600 mb-2 font-bold">Hi Everyone👋,I'm </span>
+                        <h2 class="text-5xl font-bold mb-4">Muh.Zulhaji</h2>
+                        <p class="mb-6">
+                            I am a beginner developer who is enthusiastic about learning and developing creative solutions in the world of technology. With the spirit to continue to grow, I focus on mastering the latest technology and applying it in my projects.
+                        </p>
+                        <!-- <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition duration-300 flex items-center justify-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="h-6 w-6 fill-current">
+                                <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                            </svg>
+                            Get in Touch
+                        </a> -->
+                        
                     </div>
                 </div>
-
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img src="https://imgur.com/a/7apJCY8" alt="Proyek 2" class="w-full h-56 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold">Proyek 2</h3>
-                        <p class="mt-4 text-gray-600">Deskripsi singkat proyek 2 ini. Memiliki fitur menarik yang membantu pengguna mencapai tujuannya dengan efisien.</p>
-                        <a href="#" class="mt-4 inline-block text-blue-600">Lihat Detail</a>
-                    </div>
-                </div>
-
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img src="https://via.placeholder.com/400" alt="Proyek 3" class="w-full h-56 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold">Proyek 3</h3>
-                        <p class="mt-4 text-gray-600">Deskripsi singkat proyek 3 ini. Fokus pada pengalaman pengguna yang optimal dengan desain minimalis.</p>
-                        <a href="#" class="mt-4 inline-block text-blue-600">Lihat Detail</a>
-                    </div>
+        
+                <!-- Kolom 2: Gambar atau Konten Visual -->
+                <div class="col-span-6 md:col-span-3 flex justify-center items-center relative">
+                    <!-- <img src="path/to/your/image.jpg" alt="Your Image" class="w-full h-full object-cover rounded-lg"> -->
+                    <span class="absolute bottom-10 left-1/2 -translate-x-1/2 md:scale-125">
+                        <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#74b9ff" d="M47.4,-51C59.2,-35.6,65.1,-17.8,63.4,-1.7C61.7,14.5,52.6,28.9,40.8,36.6C28.9,44.2,14.5,45,-2,47C-18.4,49,-36.8,52.1,-45.4,44.5C-53.9,36.8,-52.5,18.4,-51.2,1.3C-49.9,-15.8,-48.7,-31.7,-40.2,-47.1C-31.7,-62.4,-15.8,-77.3,1,-78.3C17.8,-79.2,35.6,-66.3,47.4,-51Z" transform="translate(100 100) scale(1.1)"></path>
+                        </svg>
+                    </span>
                 </div>
             </div>
         </div>
     </section>
+    
+    
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-white text-center px-6">
-        <div class="container mx-auto max-w-xl">
-            <h2 class="text-3xl font-semibold">Kontak Saya</h2>
-            <p class="mt-4 text-xl text-gray-600">Jika Anda tertarik untuk bekerja sama atau memiliki pertanyaan, jangan ragu untuk menghubungi saya.</p>
-            <form class="mt-8">
-                <input type="text" placeholder="Nama" class="w-full p-4 mb-4 border border-gray-300 rounded-lg">
-                <input type="email" placeholder="Email" class="w-full p-4 mb-4 border border-gray-300 rounded-lg">
-                <textarea placeholder="Pesan" class="w-full p-4 mb-4 border border-gray-300 rounded-lg"></textarea>
-                <button type="submit" class="w-full bg-blue-600 text-white p-4 rounded-lg">Kirim Pesan</button>
-            </form>
+    <section id="projects" class="py-40 flex justify-center items-center bg-gray-200">
+        <div class="text-center space-y-6">
+            <h2 class="text-4xl font-bold text-gray-800">My Projects</h2>
+            <p class="text-lg text-gray-600">Here are some of the projects I have worked on.</p>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-blue-600 text-white text-center py-4">
-        <p>&copy; 2024 Zul.Semua Hak Cipta Dilindungi.</p>
+    <section id="services" class="py-40 flex justify-center items-center bg-blue-600">
+        <div class="text-center space-y-6">
+            <h2 class="text-4xl font-bold text-white">My Services</h2>
+            <p class="text-lg text-white">I offer various services to help you succeed in your business.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="py-40 flex justify-center items-center bg-gray-200">
+        <div class="text-center space-y-6">
+            <h2 class="text-4xl font-bold text-gray-800">Contact Me</h2>
+            <p class="text-lg text-gray-600">Feel free to reach out for collaborations or inquiries.</p>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-4 text-center">
+        <p>&copy; 2024 Muh. Zulhaji. All rights reserved.</p>
     </footer>
 
+    <!-- JavaScript -->
+    <script>
+        const navbar = document.getElementById('navbar');
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        // Toggle mobile menu
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Change navbar background on scroll
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 0) {
+                navbar.classList.add('bg-gray/50', 'shadow-md');
+                navbar.classList.remove('bg-transparent');
+            } else {
+                navbar.classList.remove('shadow-md');
+                navbar.classList.add('bg-transparent');
+                navbar.classList.remove('bg-gray/50');
+            }
+        });
+    </script>
 </body>
 </html>
+
